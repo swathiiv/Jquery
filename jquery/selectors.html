@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+    <p>This is paragraph A outside div</p>
+    <p>This is paragraph B outside div</p>
+
+	<h1>Intro to selectors</h1>
+
+    <div id="div1">
+        <p id="p1">This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p class="para">This is paragraph 3</p>
+    </div>
+
+    <div id="div2">
+        <p>This is paragraph 4</p>
+        <p>This is paragraph 5</p>
+        <p class="para">This is paragraph 6</p>
+    </div>
+
+    <div id="div3">
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+    </div>
+
+    <!--jquery selectors part 1-->
+    <button onclick="func2()">Change color of both div</button><br/><br/>
+    <button onclick="func3()">Change style of paragraph1</button><br/><br/>
+    <button onclick="func4()">Change style of paragraph1 and paragraph6 using class</button>
+
+    <!--Jquery selectors part 2-->
+    <br/><br/>
+    <button onclick="func5()">Change color of div 1 and div 3 </button><br/><br/>
+	<button onclick="func6()">Change color of div 1 and all li </button><br/><br/>
+    <button onclick="func7()">Fade all paragraphs inside the div </button><br/><br/>
+    <!--Fade all paragraphs inside div means all paragraphs 1,2,3,4,5,6 except Paragraph A nad B-->
+
+    <button onclick="func8()">Fade paragraph A which doesnt have id or class name </button><br/><br/>
+    <button onclick="func9()">Hide all even list items</button><br/><br/>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="selectors.js"></script>
+</html>
